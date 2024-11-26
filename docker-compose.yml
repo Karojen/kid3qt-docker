@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  kid3qt-docker:
+    image: ghcr.io/Karojen/kid3qt-docker:latest
+    container_name: kid3qt-docker
+    ports:
+      - "6080:6080"
+    environment:
+      - VNC_PASSWORD=mysecurepassword # Optional, no password by default
+    restart: unless-stopped
