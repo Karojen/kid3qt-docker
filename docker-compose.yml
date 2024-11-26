@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   kid3qt-docker:
-    image: ghcr.io/Karojen/kid3qt-docker:latest
+    image: ghcr.io/karojen/kid3qt-docker:latest
     container_name: kid3qt-docker
     ports:
       - "6080:6080"
